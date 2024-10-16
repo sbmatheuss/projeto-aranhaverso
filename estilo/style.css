@@ -1,0 +1,150 @@
+@charset 'UTF-8';
+
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: 'Sarala', sans-serif; /* Fonte principal */
+    --font-secondary: 'Shadows Into Light', cursive; /* Fonte secundária */
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    background: url('../imagens/wsp.jpeg') center no-repeat fixed;
+    background-size: cover;
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+nav {
+    background-color: #841e1e44;
+    
+    padding: 10px 0;
+    margin: 0 auto;
+    border: 2px solid rgba(0, 0, 0, 0.295);
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+nav > ul > li:hover{
+    background-color: rgba(0, 0, 0, 0.321)
+    
+    
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+.menu > li {
+    margin: 0 10px;
+    transition-duration: .8s;
+
+}
+
+.titulo {
+    font-family: var(--font-secondary); /* Usando fonte secundária para o título */
+    font-size: 2.5rem; /* Tamanho do título */
+    color: #c0392b; /* Cor do título */
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 26px;
+    height: 70px;
+    padding: 3px;
+    display: inline-block;
+    margin: 7px 0px;
+}
+
+.container {
+    display: flex; /* Flexbox para organizar conteúdo */
+    flex-direction: column; /* Colocar itens em coluna */
+    align-items: center; /* Centralizar itens */
+    background: #fff; /* Cor de fundo branca */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.704); /* Sombra para dar profundidade */
+    margin: 20px auto; /* Margem para centralizar */
+    max-width: 800px; /* Largura máxima */
+    padding: 20px; /* Espaçamento interno */
+    overflow: hidden; /* Evita quebras de linhas */
+    background-color: blue;
+
+}
+
+.container img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas para imagens */
+    
+}
+
+.container p {
+    margin-top: 15px; /* Espaçamento acima dos parágrafos */
+    text-align: justify; /* Justifica o texto */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.707);
+    color: white;
+    line-height: 2em; /* Espaçamento entre as linhas */
+
+}
+
+.container > p > a {
+  background-color: black;
+  color: red;
+  text-decoration: none;
+}
+
+.container > p > a:hover {
+  text-decoration: underline;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 0.9rem; /* Tamanho do texto do footer */
+    background-color: black;
+}
+
+/* Link no footer */
+footer a {
+    color: red; /* Cor do link */
+    text-decoration: none; /* Sem sublinhado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 2rem; /* Tamanho menor em telas pequenas */
+    }
+
+    .container {
+        padding: 15px; /* Menos padding em telas pequenas */
+    }
+
+    .container p {
+        font-size: 0.95rem; /* Tamanho do texto reduzido em telas pequenas */
+    }
+}
+
